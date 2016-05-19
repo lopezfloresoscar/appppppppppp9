@@ -3,7 +3,7 @@ $(document).ready(function(e) {
     document.addEventListener("deviceready", Dispositivo_Listo, false);
 	//Cuando esta listo el dispositivo//
 	function Dispositivo_Listo() {
-		$('#localizacion').on('tap',function(){
+		$('#localizar').on('tap',function(){
 			navigator.geolocation.getCurrentPosition( function (position){
 				$('#localizacion').html('latitude:' + posicion.coords.latitude +'\n' + 
 				'Longitud: ' + posicion.coords.longitude + '\n' +
