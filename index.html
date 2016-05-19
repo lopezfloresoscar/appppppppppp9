@@ -23,60 +23,27 @@
 
 <div data-role="page" id="page1 "data-theme="a">
   <div data-role="header" data-position="fixed" data-tap-toogle="false">
-    <h1 align="center">Pruebas</h1>
+    <h1 align="center">geoleocalizacion</h1>
   </div>
-  
-  <div data-role="content">
-  <a data-role="button" data-theme="a" href="#page2" data-icon="star" data-iconpos="bottom">Acelerometro</a>
-  <a data-role="button" data-theme="a" href="#page3" data-icon="star" data-iconpos="bottom">Geolocalización</a>
-  <a data-role="button" data-theme="a" href="#" data-icon="star" data-iconpos="bottom">Cámara</a>
+  <div data-role="main" class="ui-content">
+  <a href="#datos" id="localizar" class="ui-btn ui-icon-eye ui-btn-icon-left ui-shadow">ubicame</a>
   </div>
-  
+  </div>
+  <div data-role="page" id="datos">
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" style="background-color:#76aff4;">
+  <div id="titulo" style="text-shadow: 1px 1px 1px black;"">
+  </div>
+  <div data-role="main" class="ui-content">
+  <div id="localizacion">&nbsp;</div>
+  </div>
+  </div>
+  </div>
   <div data-role="footer" data-position="fixed" data-tap-toggle="false" align="center">
     <h2 style="color:#0F3">oscar lopez flores</h2>
     <img src="res/android/mdpi.png" width="46" height="46">
   </div>
   </div>
   
-   <div data-role="page" id="page2" data-add-back-btn="true">
-  <div data-theme="b" data-role="header">
-  <h3>Prueba 7</h3>
-  </div>
-  <div data-role="content" align="center">
-  ACELEROMETRO
-  <div align="center" id="acelerometro" style=" width:90%; padding:20px 20px; text-align:left; background-color:#FF6;">
-  Esperando...
-  </div>
-  <a data-role="button" data-theme="b" href="#" onClick="Detente();">Detener</a>
-  </div>
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false" align="center">
-    <h2 style="color:#F00">oscar lopez flores</h2>
-    <img src="res/android/mdpi.png" width="46" height="46">
-  </div>
-  </div>
-  </div>
-  
-  
-  <div data-role="page" id="page3" data-add-back-btn="true">
-  <div data-theme="b" data-role="header">
-  <h3>Prueba 7</h3>
-  </div>
-  <div data-role="content" align="center">
-  GEOLOCALIZACION
-  <div align="center" id="geolocalizacion" style=" width:90%; padding:20px 20px; text-align:left; background-color:#FF6;">
-  Esperando...
-  </div>
-  <a data-role="button" data-theme="b" href="#" onClick="Detente();">Detener</a>
-  </div>
-  
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false" align="center">
-    <h2 style="color:#F00">oscar lopez flores</h2>
-    <img src="res/android/mdpi.png" width="46" height="46">
-  </div>
-  </div>
-  </div>
-  
-  </div>
 </body>
 
 </html>
